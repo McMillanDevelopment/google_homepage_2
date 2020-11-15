@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+}
+/* Remove default 8px margin */
+header {
+    background-color: aqua;
+}
+
+.navbar-flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-flex-container > li {
+    padding: 0px 10px;
+}
+
+.navbar {
+    width: 5em ;
+    background-color: rgb(101, 101, 156);
+    border: 1px solid black;
+}
+
+.footer-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(0, 255, 136);
+}
+
+.footer-flex-container > li {
+    padding: 0px 10px;
+}
+
+.footer-flex-left {
+    display: flex;
+    flex: 50%%;
+}
+
+.footer-flex-right {
+    display: flex;
+    flex: 50%;
+}
+
+/* @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  } */
+
+.footer {
+    width: 10ßem ;
+    background-color: rgb(101, 101, 156);
+    border: 1px solid black;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+    /* not sure why ul defaulted to this padding-inline, FOUND IN DEVTOOLS */
+}

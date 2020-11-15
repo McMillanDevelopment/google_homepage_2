@@ -1,0 +1,117 @@
+/*  To Do List
+
+1. Navbar items not aligned properly
+2. Add Footer
+3. Media Query the footer to stack
+
+*/
+
+body {
+    margin: 0px;
+    min-width: 460px;
+}
+
+li {
+    list-style: none;
+}
+
+/* HEADER */
+
+#header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+    /* 
+    if i margin-right and margin-left 1em in the header it breaks the formating?, not sure why
+    */
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 10%;
+    margin: auto;
+    margin-left: 1em;
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 10%;
+    margin: auto;
+    margin-right: 1em;
+}
+
+/* BODY */
+
+/* FOOTER */
+
+#footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    /* 
+    if i margin-right and margin-left 1em in the header it breaks the formating?, not sure why
+    */
+    flex-wrap: wrap;
+    /* MQ */
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 15%;
+    height: auto;
+    margin: auto;
+    margin-left: 1em;
+    flex: 50%;
+    /* MQ */
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 15%;
+    height: auto;
+    margin: auto;
+    margin-right: 1em;
+    flex: 50%;
+    /* MQ */
+}
+
+
+/* MISC */
+
+
+ul  li {
+    padding: 0px 10px;
+}
+
+ul {
+    padding-inline-start: 0px;
+    default UL setting maybe? default was set at 40px */
+}
+
+/* MEDIA QUERIES */
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout
+@media (max-width: 600px) {
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: green;
+    }
+    /* Cant seem to get anything to apply to footer-container */
+
+    /* .footer-left, .footer-right {
+        flex: 100%;
+    }
+  } */
